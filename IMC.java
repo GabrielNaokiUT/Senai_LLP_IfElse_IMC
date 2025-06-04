@@ -10,18 +10,18 @@ import java.util.Scanner;
             p = leia.nextFloat();
             imc = p/(a * a);
             if (imc < 18.5){
-                System.out.print("Abaixo do peso: IMC = " + imc);
+                System.out.print("Seu IMC = " + imc + ". Abaixo do peso.");
             }
             else{
                 if((imc >= 18.5) && (imc <= 25.9)){
-                    System.out.print("Peso normal: IMC = " + imc);
+                    System.out.print("Seu IMC = " + imc + ".Peso normal.");
                 }
                 else{
                     if((imc >= 25) && (imc <= 29.9)){
-                        System.out.print("Sobrepeso: IMC = " + imc);
+                        System.out.print("Seu IMC = " + imc + ". Sobrepeso.");
                     }
                     else{
-                        System.out.print("Obesidade: IMC = " + imc);
+                        System.out.print("Seu IMC = " + imc + ". Obesidade.");
                     }
                 }
             }
